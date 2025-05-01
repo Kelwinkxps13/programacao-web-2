@@ -43,7 +43,7 @@ problemas:
 
         //Define a tabela
         var tabela = "<table style='width: 100%'>";
-        tabela = tabela + "<thead><tr><th style='text-align: center;'>Placas</th><th style='text-align: center;'>&nbsp;</th></tr></thead>";
+        tabela = tabela + `<thead><tr><th style='text-align: center;'>Placas - Página ${pg_atual} </th><th style='text-align: center;'>&nbsp;</th></tr></thead>`;
 
         for (i = (pg_atual - 1) * qt_itens; i < (pg_atual * qt_itens); i++) {
             if (lista[i] !== undefined) {
@@ -84,10 +84,12 @@ problemas:
             }
 
         }
-        if (max_page >= pg_atual) {
+        if (max_page > pg_atual) {
 
             tabela = tabela + "<input type='button' value='prox' onclick='proxTab()'>";
         }
+        tabela = tabela + "<br><br>"
+        tabela = tabela + `Quantidade de Elementos - ${size}`
 
 
         // Carrega a tabela na página
