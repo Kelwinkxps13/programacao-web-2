@@ -1,0 +1,25 @@
+editor
+
+generic
+
+index
+
+indexcreator
+
+indexeditor
+
+main
+
+veja
+
+vejaeditor
+
+base > create
+base > edit
+
+block > create
+block > edit
+
+generic > create
+generic > edit
+
